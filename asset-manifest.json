@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/champions/static/css/main.2c150b7b.chunk.css",
+    "main.js": "/champions/static/js/main.289aa62b.chunk.js",
+    "main.js.map": "/champions/static/js/main.289aa62b.chunk.js.map",
+    "runtime~main.js": "/champions/static/js/runtime~main.7d47390a.js",
+    "runtime~main.js.map": "/champions/static/js/runtime~main.7d47390a.js.map",
+    "static/js/2.ba7229ca.chunk.js": "/champions/static/js/2.ba7229ca.chunk.js",
+    "static/js/2.ba7229ca.chunk.js.map": "/champions/static/js/2.ba7229ca.chunk.js.map",
+    "index.html": "/champions/index.html",
+    "precache-manifest.49014ae7ea4579032d5bd3b4dbd6bc04.js": "/champions/precache-manifest.49014ae7ea4579032d5bd3b4dbd6bc04.js",
+    "service-worker.js": "/champions/service-worker.js",
+    "static/css/main.2c150b7b.chunk.css.map": "/champions/static/css/main.2c150b7b.chunk.css.map",
+    "static/media/KobeBryant.mp4": "/champions/static/media/KobeBryant.7e66918f.mp4",
+    "static/media/lebron.jpg": "/champions/static/media/lebron.432db230.jpg",
+    "static/media/index.css": "/champions/static/media/srim.c5958a0e.jpg"
+  }
+}

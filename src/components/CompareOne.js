@@ -3,9 +3,13 @@ import { Card, Container, Col, Row} from 'react-bootstrap';
 import NavbarPage from './NavbarPage';
 
 import Data from './Data';
-const shadow = {boxShadow:"5px 5px 5px black"}
+const shadow = {
+    boxShadow:"5px 5px 5px black",
+    
 
+}
 
+const cardSize = {width:"30rem"}
 const paddingT = {
     paddingTop:"105px",
    
@@ -18,10 +22,10 @@ function CompareOne(props)
         <div className = "Main CompareOne" style = {paddingT}>
             <NavbarPage/>
 
-                <Container>
+                <Container  style = {cardSize}>
                     <Row>
                         <Col>
-                            <Card style = {shadow} >
+                            <Card  style = {shadow} >
                                 <Card.Body>
                                     <Container>
                                         <Row>

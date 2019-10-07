@@ -16,9 +16,10 @@ boxShadow:"5px 5px 5px black"
 const backgroundStyle = {
     opacity:".05"
 }
-const iconColor = {
-
+const shadowStyle = {
+boxShadow:"3px 3px 3px black"
 }
+
 function Introduction(){
     return(
         <div className = "Main d-flex justify-content-center text-center" style = {paddingT} >
@@ -41,7 +42,7 @@ function Introduction(){
                  <br/>
                 
                 
-                Click the button below to begin!
+                Click a button below to begin!
                 </p>
 
 
@@ -51,13 +52,13 @@ function Introduction(){
                      <Row>
                          <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
                          <Link to = "/oneplayer" component = {'/CompareOne'}>
-                            <Button block variant = "primary"><i className="fas fa-user"></i></Button>
+                            <Button style = {shadowStyle} block variant = "info"><i className="fas fa-user"></i></Button>
                             </Link>
                          </Col>
 
                          <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
                          <Link to = "/twoplayers" component = {'./CompareTwo'}>
-                  <Button block variant = "primary"><i className="fas fa-user-friends"></i></Button>
+                  <Button style = {shadowStyle} block variant = "info"><i className="fas fa-user-friends"></i></Button>
                   </Link>
 
                          </Col>

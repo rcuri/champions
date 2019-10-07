@@ -3,6 +3,7 @@ from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_cors import CORS
+from elasticsearch import Elasticsearch
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -18,7 +19,8 @@ def create_app(config_class=Config):
 
     from app.api import bp as api_bp
     app.register_blueprint(api_bp, url_prefix='/api')
-
+    app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']])\
+        if app.config['ELASTICSEARCH_URL'] else None
     return app
 
 from app import models

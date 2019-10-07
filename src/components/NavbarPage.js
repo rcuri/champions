@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import Title from './Title';
 import Main from './Main';
 import navImage from '../images/logo_transparent2.png';
+import TitleVid from './TitleVid';
 
 const textColor = {
 color:"white",
@@ -27,7 +28,10 @@ function NavbarPage() {
  <div className = "navbar bg-dark navbar-expand-lg fixed-top"> 
     <NavbarBrand>
         <p className = "lead" style = {textSize}>&nbsp;&nbsp;
-        <img src = {navImage} alt = "images" style = {logoSize} />
+        <Link to = "/" component = {TitleVid}>
+                <img src = {navImage} alt = "images" style = {logoSize} />
+
+        </Link>
         </p>
         
     </NavbarBrand>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URI = 'http://localhost:5000/api';
+const BASE_URI = 'https://comparenba-api-heroku.herokuapp.com/api';
 
 const client = axios.create({
  baseURL: BASE_URI,

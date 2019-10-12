@@ -9,6 +9,8 @@ import bryant from '../images/bryant.jpg';
 
 const shadow = {boxShadow:"3px 3px 3px black"}
 
+const search = {width:"10rem"}
+
 class Data extends Component {
   constructor(props) {
    super(props);
@@ -96,7 +98,7 @@ getInfo = (data) => {
               <Row>
               <Col xs = "8" sm = "6" md = "6" lg = "6" xlg = "6">
                
-                  <FormControl name = 'player_name' type = "text" placeholder="Search Player" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
+                  <FormControl style = {search} name = 'player_name' type = "text" placeholder="Search Player" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
                   </Col>
                   <Col>
                   <Button style = {shadow} type = "submit" value = "Submit" variant = "primary">Search</Button>

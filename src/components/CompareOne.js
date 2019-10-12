@@ -9,7 +9,7 @@ const shadow = {
 
 }
 
-const cardSize = {width:"30rem"}
+const cardSize = {width:"26rem"}
 const paddingT = {
     paddingTop:"105px",
    

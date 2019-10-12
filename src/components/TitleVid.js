@@ -10,7 +10,7 @@ const videoSize = {
 const background = {
   backgroundColor:"black",
  
-  paddingTop:"50px"
+ 
 }
 const buttonStyle = {
   border:"2px white solid",
@@ -37,6 +37,7 @@ function TitleVid()
   <video playsinline webkit-playsinline autoplay loop muted className = "fadeOut animate playsinline autoplay" playsinline="playsinline" autoplay="autoplay" muted="true">
     <source src={video} type="video/mp4"/>
   </video>
+  
   <div class="container h-100">
     <div class="d-flex h-100 text-center align-items-center">
       <div class="w-100 text-white">
@@ -70,14 +71,7 @@ function TitleVid()
 </header>
 
 
-<div className = "footer fadeIn animate" style = {background} >
 
-
-
-
-
-
-</div>
         </div>
     )
 }

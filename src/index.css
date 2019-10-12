@@ -124,18 +124,39 @@ header .overlay {
   z-index: 1;
 }
 
-/*
 
-@media (pointer: coarse) and (hover: none) {
+/*
+@media only screen and (max-width:979px) {
   header {
     background-image: url('./images/srim.jpg') black no-repeat center center scroll;
   }
-  header video {
+  header {
     display: box;
   }
 }
 
+
 */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('./images/srim.jpg') black no-repeat center center scroll;
+    background-size:cover;
+    height:100vh;
+
+  }
+
+  .fadeIn
+{
+  animation-duration:4s;
+  animation-delay:2s;
+  animation-iteration-count:1;
+}
+  header video {
+    display: none;
+  }
+}
+
 
 
 

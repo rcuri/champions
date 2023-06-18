@@ -10,7 +10,7 @@ const client = axios.create({
 class APIClient2 {
 
 getPlayer(player){
-    return this.perform('get', `player?player_name=${player.player_name}`);
+    return this.perform('get', `players?player_name=${player.player_name}`);
 }
 
  async perform (method, resource, data) {

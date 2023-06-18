@@ -12,23 +12,14 @@ const SizeImage = {
  }
 
 function CompareStructure(props)
-{
+{   console.log("compare structure")
+    console.log(props)
     return(
         <div className = "CompareStructure">
                 <div>
                     <br/>
                       <Table sm responsive striped bordered hover>
                                 <tbody>
-                                    <th colSpan = "2" style = {backgroundCardSize}>           
-                                        <Card className = "CompareCard">      
-                                            <Card.Body>
-                                            <Card.Img style = {backgroundCardSize} src = {background}/>
-                                                <Card.ImgOverlay className = "d-flex justify-content-center align-items-center">
-                                                <img style = {SizeImage}  className = "rounded-circle" src={process.env.PUBLIC_URL + '/player_images/' + props.PlayerImage} alt = "player"/>
-                                                </Card.ImgOverlay> 
-                                            </Card.Body>
-                                        </Card>
-                                    </th>
                                    
                                     <tr className = "lead">
                                         <th className = "lead" scope = "row">Name</th>
@@ -72,10 +63,6 @@ function CompareStructure(props)
                                        <tr>
                                        <th className = "lead" scope = "row">Three Pointers Percentage</th>
                                        <th><h5 className = "lead">{props.ThreePointersPct.toFixed(2)}%</h5></th>
-                                       </tr>
-                                       <tr>
-                                       <th className = "lead" scope = "row">True STG Percentage</th>
-                                       <th><h5 className = "lead">{props.trueSTGPct.toFixed(2)}%</h5></th>
                                        </tr>
                                       
                                        <tr>

@@ -76,14 +76,21 @@ getInfo = (data) => {
 
   this.setState({player:state});
   this.APIClient  = new APIClient();
-  this.APIClient.getPlayer(this.state.player).then((data) =>
-  this.setState({state, players:data})) ;
+  this.APIClient.getPlayer(this.state.player).then((data) => {
+    console.log("DATA HERE");
+    console.log(data)
+    this.setState({state, players:data})
+    console.log(this.state)
+    console.log("below state")
+  }
+  ) ;
   
  };
 
  render() {
    if(this.state.players == null)
    {
+    console.log("null in here")
      return null;
    }
 
@@ -111,31 +118,29 @@ getInfo = (data) => {
 
 
       <CompareStructure
-      PlayerImage = {this.state.players.player_image}
-      Name = {this.state.players.player_name}
-      Season = {this.state.players.first_nba_season}
-      Position = {this.state.players.positions}
-      Assists = {this.state.players.assists}
-      Blocks = {this.state.players.blocks}
+      Name = {this.state.players.data.player_name}
+      Season = {this.state.players.data.first_nba_season}
+      Position = {this.state.players.data.position}
+      Assists = {this.state.players.data.assists}
+      Blocks = {this.state.players.data.blocks}
     /*Begin Nested */
-      fieldGoalAtt = {this.state.players.shooting.field_goal_attempted}
-      fieldGoalMade = {this.state.players.shooting.field_goal_made}
-      fieldGoalPercent = {this.state.players.shooting.field_goal_pct*100}
-      freeThrowAttempt = {this.state.players.shooting.free_throw_attempted}
-      freeThrowMade = {this.state.players.shooting.free_throw_made}
+      fieldGoalAtt = {this.state.players.data.field_goal_attempted}
+      fieldGoalMade = {this.state.players.data.field_goal_made}
+      fieldGoalPercent = {this.state.players.data.field_goal_pct*100}
+      freeThrowAttempt = {this.state.players.data.free_throw_attempted}
+      freeThrowMade = {this.state.players.data.free_throw_made}
 
-      freeThrowPct = {this.state.players.shooting.free_throw_pct*100}
-      PPG = {this.state.players.shooting.points}
-      ThreePointersAttempted = {this.state.players.shooting.three_pt_attempted}
-      ThreePointersMade = {this.state.players.shooting.three_pt_made}
-      ThreePointersPct = {this.state.players.shooting.three_pt_pct*100}
-      trueSTGPct = {this.state.players.shooting.true_stg_pct*100}
+      freeThrowPct = {this.state.players.data.free_throw_pct*100}
+      PPG = {this.state.players.data.points}
+      ThreePointersAttempted = {this.state.players.data.three_pt_attempted}
+      ThreePointersMade = {this.state.players.data.three_pt_made}
+      ThreePointersPct = {this.state.players.data.three_pt_pct*100}
       /*End Nested*/
-      defReb = {this.state.players.def_reb}
-      offReb = {this.state.players.off_reb}
-      totReb = {this.state.players.tot_reb}
-      turnOvers = {this.state.players.turnovers}
-      steals = {this.state.players.steals}/>
+      defReb = {this.state.players.data.def_reb}
+      offReb = {this.state.players.data.off_reb}
+      totReb = {this.state.players.data.tot_reb}
+      turnOvers = {this.state.players.data.turnovers}
+      steals = {this.state.players.data.steals}/>
 
      </div>
    );

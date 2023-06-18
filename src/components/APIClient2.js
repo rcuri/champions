@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URI = 'https://comparenba-api-heroku.herokuapp.com/api';
+const BASE_URI = 'https://qbrlgxkhtd.execute-api.us-east-1.amazonaws.com/';
 
 const client = axios.create({
  baseURL: BASE_URI,
@@ -10,7 +10,7 @@ const client = axios.create({
 class APIClient2 {
 
 getPlayer(player){
-    return this.perform('get', `/players/${player.player_name}`);
+    return this.perform('get', `player?player_name=${player.player_name}`);
 }
 
  async perform (method, resource, data) {
@@ -20,7 +20,8 @@ getPlayer(player){
      data,
      
    }).then(resp => {
-     return resp.data ? resp.data : [];
+    console.log(resp)
+     return resp ? resp : [];
    })
  }
 }

@@ -12,8 +12,7 @@ const SizeImage = {
  }
 
 function CompareStructure(props)
-{   console.log("compare structure")
-    console.log(props)
+{   
     return(
         <div className = "CompareStructure">
                 <div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Container, Row, Col, Button, FormControl, Form} from 'react-bootstrap';
 import axios from 'axios';
-import APIClient from './APIClient';
+import APIClient from './APIClient2';
 import CompareStructure from './CompareStructure';
 import bryant from '../images/bryant.jpg';
 //import user from '../../public/player_images/user.png';

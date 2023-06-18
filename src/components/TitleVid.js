@@ -57,7 +57,7 @@ function TitleVid()
         <Row className = "top-buffer">
           <Col xs = "12" sm = "12" md = "12" lg = "12" xlg = "12" >
           <Link to = "/home" component = {'./Main'}>
-             <Button style = {buttonStyle} variant = "secondary">Proceed to Site</Button>
+             <Button style = {buttonStyle} variant = "secondary">Proceed</Button>
           </Link>
           </Col>
         </Row>

@@ -84,12 +84,8 @@ class SearchBar extends Component
        
    
         alert('A name was submitted: ' + this.state.player);
-        console.log(this.state.player);
         let newPlayer = event.target.value;
         this.setState({player: newPlayer});
-        console.log(this.state.player);
-        console.log(this.state.player + " this is your new state")
-
       }
 
    render()

@@ -20,7 +20,6 @@ getPlayer(player){
      data,
      
    }).then(resp => {
-    console.log(resp)
      return resp ? resp : [];
    })
  }

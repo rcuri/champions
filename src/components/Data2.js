@@ -31,12 +31,6 @@ class Data2 extends Component {
 handleSubmit = (event) => {
 event.preventDefault();
 const data = this.state;
-console.log(data);
-console.log(event);
-console.log(event.target.player_name);
-console.log(event.target.value);
-console.log(event.target.player_image);
-
 this.setState({[event.target.player_name]: event.target.value});
 this.setState({player_name: event.target.value});
 this.getInfo(data);
@@ -46,13 +40,10 @@ getInfo = (data) => {
 
   this.APIClient  = new APIClient2();
   this.APIClient.getPlayer(this.state).then((data) => {
-    console.log(data.player_image + " before if");
 
     if(data.player_image === null){
-      console.log("image here");
       data.player_image = "user.png";
     }
-    console.log(data.player_image + "after if");
 
     this.setState({data, players:data});
 

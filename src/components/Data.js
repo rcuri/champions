@@ -41,11 +41,6 @@ handleSubmit = (event) => {
 
 event.preventDefault();
 let data = this.state;
-console.log(data);
-console.log(event.target.player_name);
-console.log(event.target.value);
-console.log(data.players.player_image);
-
 this.setState({[event.target.player_name]: event.target.value});
 this.setState({player_name: event.target.value});
 this.getInfo(data);
@@ -57,13 +52,10 @@ getInfo = (data) => {
 
   this.APIClient  = new APIClient();
   this.APIClient.getPlayer(this.state).then((data) => {
-    console.log(data.player_image + " before if");
 
     if(data.player_image === null){
-      console.log("image here");
       data.player_image = "user.png";
     }
-    console.log(data.player_image + "after if");
 
     this.setState({data, players:data});
 
@@ -77,11 +69,7 @@ getInfo = (data) => {
   this.setState({player:state});
   this.APIClient  = new APIClient();
   this.APIClient.getPlayer(this.state.player).then((data) => {
-    console.log("DATA HERE");
-    console.log(data)
     this.setState({state, players:data})
-    console.log(this.state)
-    console.log("below state")
   }
   ) ;
   
@@ -90,7 +78,6 @@ getInfo = (data) => {
  render() {
    if(this.state.players == null)
    {
-    console.log("null in here")
      return null;
    }
 

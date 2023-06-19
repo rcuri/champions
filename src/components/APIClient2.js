@@ -20,7 +20,7 @@ getPlayer(player){
      data,
      
    }).then(resp => {
-     return resp.data ? resp.data : [];
+     return resp.data[0] ? resp.data[0] : [];
    })
  }
 }

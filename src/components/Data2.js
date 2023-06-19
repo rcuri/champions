@@ -91,29 +91,29 @@ getInfo = (data) => {
  
       <CompareStructure
 
-        Name = {this.state.players.data.player_name}
-        Season = {this.state.players.data.first_nba_season}
-        Position = {this.state.players.data.position}
-        Assists = {this.state.players.data.assists}
-        Blocks = {this.state.players.data.blocks}
+        Name = {this.state.players.player_name}
+        Season = {this.state.players.first_nba_season}
+        Position = {this.state.players.position}
+        Assists = {this.state.players.assists}
+        Blocks = {this.state.players.blocks}
         /*Begin Nested */
-        fieldGoalAtt = {this.state.players.data.field_goal_attempted}
-        fieldGoalMade = {this.state.players.data.field_goal_made}
-        fieldGoalPercent = {this.state.players.data.field_goal_pct*100}
-        freeThrowAttempt = {this.state.players.data.free_throw_attempted}
-        freeThrowMade = {this.state.players.data.free_throw_made}
+        fieldGoalAtt = {this.state.players.field_goal_attempted}
+        fieldGoalMade = {this.state.players.field_goal_made}
+        fieldGoalPercent = {this.state.players.field_goal_pct*100}
+        freeThrowAttempt = {this.state.players.free_throw_attempted}
+        freeThrowMade = {this.state.players.free_throw_made}
 
-        freeThrowPct = {this.state.players.data.free_throw_pct*100}
-        PPG = {this.state.players.data.points}
-        ThreePointersAttempted = {this.state.players.data.three_pt_attempted}
-        ThreePointersMade = {this.state.players.data.three_pt_made}
-        ThreePointersPct = {this.state.players.data.three_pt_pct*100}
+        freeThrowPct = {this.state.players.free_throw_pct*100}
+        PPG = {this.state.players.points}
+        ThreePointersAttempted = {this.state.players.three_pt_attempted}
+        ThreePointersMade = {this.state.players.three_pt_made}
+        ThreePointersPct = {this.state.players.three_pt_pct*100}
         /*End Nested*/
-        defReb = {this.state.players.data.def_reb}
-        offReb = {this.state.players.data.off_reb}
-        totReb = {this.state.players.data.tot_reb}
-        turnOvers = {this.state.players.data.turnovers}
-        steals = {this.state.players.data.steals}/>
+        defReb = {this.state.players.def_reb}
+        offReb = {this.state.players.off_reb}
+        totReb = {this.state.players.tot_reb}
+        turnOvers = {this.state.players.turnovers}
+        steals = {this.state.players.steals}/>
 
      </div>
    );

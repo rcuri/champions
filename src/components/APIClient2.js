@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URI = 'https://gjjjt1kp33.execute-api.us-east-1.amazonaws.com/';
+const BASE_URI = 'https://699zjvu4ta.execute-api.us-east-1.amazonaws.com/';
 
 const client = axios.create({
  baseURL: BASE_URI,
@@ -10,7 +10,7 @@ const client = axios.create({
 class APIClient2 {
 
 getPlayer(player){
-    return this.perform('get', `players?player_name=${player.player_name}`);
+    return this.perform('get', `players/${player.player_name}`);
 }
 
  async perform (method, resource, data) {
